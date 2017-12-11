@@ -10,7 +10,7 @@ public protocol RotateableView {
 }
 
 extension RotateableView where Self: UIView {
-    func addRotateGestrueHandling() {
+    public func addRotateGestrueHandling() {
         rx
             .rotationGesture(
                 configuration: { _, delegate in

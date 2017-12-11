@@ -11,7 +11,7 @@ public protocol ResizableView {
 }
 
 extension ResizableView where Self: UIView {
-    func addScaleGestrueHandling() {
+    public func addScaleGestrueHandling() {
         rx
             .pinchGesture(
                 configuration: { _, delegate in

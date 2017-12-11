@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		527413DC8574F7B631C1EA6E /* Pods_TransformableViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CE7756C780BE25FE3E1884 /* Pods_TransformableViewTests.framework */; };
 		D805C20BD1168331A88F78D2 /* Pods_TransformableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797BD81BACF5B33982FC504B /* Pods_TransformableView.framework */; };
+		F615F5831FDEDD03007762A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615F5821FDEDD03007762A3 /* AppDelegate.swift */; };
+		F615F5851FDEDD03007762A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615F5841FDEDD03007762A3 /* ViewController.swift */; };
+		F615F5881FDEDD03007762A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F615F5861FDEDD03007762A3 /* Main.storyboard */; };
+		F615F58A1FDEDD03007762A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F615F5891FDEDD03007762A3 /* Assets.xcassets */; };
+		F615F58D1FDEDD03007762A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F615F58B1FDEDD03007762A3 /* LaunchScreen.storyboard */; };
+		F615F5931FDEDFE9007762A3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615F5921FDEDFE9007762A3 /* View.swift */; };
 		F6DCAC5C1FDCC54700234666 /* TransformableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DCAC521FDCC54700234666 /* TransformableView.framework */; };
 		F6DCAC611FDCC54700234666 /* TransformableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCAC601FDCC54700234666 /* TransformableViewTests.swift */; };
 		F6DCAC631FDCC54700234666 /* TransformableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F6DCAC551FDCC54700234666 /* TransformableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,6 +22,7 @@
 		F6DCAC711FDCC5D300234666 /* DragableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCAC6D1FDCC5D300234666 /* DragableView.swift */; };
 		F6DCAC721FDCC5D300234666 /* TransformableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCAC6E1FDCC5D300234666 /* TransformableView.swift */; };
 		F6DCAC731FDCC5D300234666 /* ResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCAC6F1FDCC5D300234666 /* ResizableView.swift */; };
+		FD4FE7AB657D0588077D4E67 /* Pods_TransformableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A018F997EF0B57DF62E452 /* Pods_TransformableViewDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,11 +37,22 @@
 
 /* Begin PBXFileReference section */
 		02CE7756C780BE25FE3E1884 /* Pods_TransformableViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransformableViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E7253212E26AFAEA15E867A /* Pods-TransformableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransformableViewDemo/Pods-TransformableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		26A018F997EF0B57DF62E452 /* Pods_TransformableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransformableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		270DD7504A3D273EBB7A4500 /* Pods-TransformableViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformableViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransformableViewTests/Pods-TransformableViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		65F07081237B45907E30BB6A /* Pods-TransformableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransformableView/Pods-TransformableView.debug.xcconfig"; sourceTree = "<group>"; };
 		797BD81BACF5B33982FC504B /* Pods_TransformableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransformableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCF28DF793DE855D4548141 /* Pods-TransformableViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformableViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransformableViewTests/Pods-TransformableViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6B4AAE64D50EF03BB6C4A96 /* Pods-TransformableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransformableViewDemo/Pods-TransformableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		ED5FBA19ABF8478BF51862D4 /* Pods-TransformableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransformableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransformableView/Pods-TransformableView.release.xcconfig"; sourceTree = "<group>"; };
+		F615F5801FDEDD03007762A3 /* TransformableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransformableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F615F5821FDEDD03007762A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F615F5841FDEDD03007762A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F615F5871FDEDD03007762A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F615F5891FDEDD03007762A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F615F58C1FDEDD03007762A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F615F58E1FDEDD03007762A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F615F5921FDEDFE9007762A3 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		F6DCAC521FDCC54700234666 /* TransformableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransformableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DCAC551FDCC54700234666 /* TransformableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformableView.h; sourceTree = "<group>"; };
 		F6DCAC561FDCC54700234666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +66,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F615F57D1FDEDD03007762A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4FE7AB657D0588077D4E67 /* Pods_TransformableViewDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6DCAC4E1FDCC54700234666 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,6 +99,7 @@
 			children = (
 				797BD81BACF5B33982FC504B /* Pods_TransformableView.framework */,
 				02CE7756C780BE25FE3E1884 /* Pods_TransformableViewTests.framework */,
+				26A018F997EF0B57DF62E452 /* Pods_TransformableViewDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,8 +111,24 @@
 				ED5FBA19ABF8478BF51862D4 /* Pods-TransformableView.release.xcconfig */,
 				DBCF28DF793DE855D4548141 /* Pods-TransformableViewTests.debug.xcconfig */,
 				270DD7504A3D273EBB7A4500 /* Pods-TransformableViewTests.release.xcconfig */,
+				0E7253212E26AFAEA15E867A /* Pods-TransformableViewDemo.debug.xcconfig */,
+				E6B4AAE64D50EF03BB6C4A96 /* Pods-TransformableViewDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F615F5811FDEDD03007762A3 /* TransformableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F615F5821FDEDD03007762A3 /* AppDelegate.swift */,
+				F615F5841FDEDD03007762A3 /* ViewController.swift */,
+				F615F5861FDEDD03007762A3 /* Main.storyboard */,
+				F615F5891FDEDD03007762A3 /* Assets.xcassets */,
+				F615F58B1FDEDD03007762A3 /* LaunchScreen.storyboard */,
+				F615F58E1FDEDD03007762A3 /* Info.plist */,
+				F615F5921FDEDFE9007762A3 /* View.swift */,
+			);
+			path = TransformableViewDemo;
 			sourceTree = "<group>";
 		};
 		F6DCAC481FDCC54700234666 = {
@@ -93,6 +136,7 @@
 			children = (
 				F6DCAC541FDCC54700234666 /* TransformableView */,
 				F6DCAC5F1FDCC54700234666 /* TransformableViewTests */,
+				F615F5811FDEDD03007762A3 /* TransformableViewDemo */,
 				F6DCAC531FDCC54700234666 /* Products */,
 				D7D9D67D2CE0C2DCB8DAF14C /* Pods */,
 				7D9DB2EABE0EAA8CAA5BB7A3 /* Frameworks */,
@@ -104,6 +148,7 @@
 			children = (
 				F6DCAC521FDCC54700234666 /* TransformableView.framework */,
 				F6DCAC5B1FDCC54700234666 /* TransformableViewTests.xctest */,
+				F615F5801FDEDD03007762A3 /* TransformableViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +189,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F615F57F1FDEDD03007762A3 /* TransformableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F615F5911FDEDD03007762A3 /* Build configuration list for PBXNativeTarget "TransformableViewDemo" */;
+			buildPhases = (
+				D04936A710DD910F45029186 /* [CP] Check Pods Manifest.lock */,
+				F615F57C1FDEDD03007762A3 /* Sources */,
+				F615F57D1FDEDD03007762A3 /* Frameworks */,
+				F615F57E1FDEDD03007762A3 /* Resources */,
+				6BDC9478213A8A2016B4717D /* [CP] Embed Pods Frameworks */,
+				E439251A7C7D8B0052F2E5D3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransformableViewDemo;
+			productName = TransformableViewDemo;
+			productReference = F615F5801FDEDD03007762A3 /* TransformableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F6DCAC511FDCC54700234666 /* TransformableView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6DCAC661FDCC54700234666 /* Build configuration list for PBXNativeTarget "TransformableView" */;
@@ -195,6 +260,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Rep;
 				TargetAttributes = {
+					F615F57F1FDEDD03007762A3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					F6DCAC511FDCC54700234666 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
@@ -212,6 +281,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F6DCAC481FDCC54700234666;
 			productRefGroup = F6DCAC531FDCC54700234666 /* Products */;
@@ -220,11 +290,22 @@
 			targets = (
 				F6DCAC511FDCC54700234666 /* TransformableView */,
 				F6DCAC5A1FDCC54700234666 /* TransformableViewTests */,
+				F615F57F1FDEDD03007762A3 /* TransformableViewDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F615F57E1FDEDD03007762A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F615F58D1FDEDD03007762A3 /* LaunchScreen.storyboard in Resources */,
+				F615F58A1FDEDD03007762A3 /* Assets.xcassets in Resources */,
+				F615F5881FDEDD03007762A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6DCAC501FDCC54700234666 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +356,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6BDC9478213A8A2016B4717D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TransformableViewDemo/Pods-TransformableViewDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransformableViewDemo/Pods-TransformableViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A2765EC49953DEE374671DC4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,6 +398,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransformableViewTests/Pods-TransformableViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D04936A710DD910F45029186 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransformableViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D3BC0297694FCD16CCA3048B /* [CP] Check Pods Manifest.lock */ = {
@@ -330,9 +451,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransformableViewTests/Pods-TransformableViewTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E439251A7C7D8B0052F2E5D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransformableViewDemo/Pods-TransformableViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F615F57C1FDEDD03007762A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F615F5851FDEDD03007762A3 /* ViewController.swift in Sources */,
+				F615F5831FDEDD03007762A3 /* AppDelegate.swift in Sources */,
+				F615F5931FDEDFE9007762A3 /* View.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6DCAC4D1FDCC54700234666 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,7 +508,58 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		F615F5861FDEDD03007762A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F615F5871FDEDD03007762A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F615F58B1FDEDD03007762A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F615F58C1FDEDD03007762A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		F615F58F1FDEDD03007762A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E7253212E26AFAEA15E867A /* Pods-TransformableViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDX989Y6D8;
+				INFOPLIST_FILE = TransformableViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rep.TransformableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F615F5901FDEDD03007762A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B4AAE64D50EF03BB6C4A96 /* Pods-TransformableViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDX989Y6D8;
+				INFOPLIST_FILE = TransformableViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rep.TransformableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F6DCAC641FDCC54700234666 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -564,6 +761,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F615F5911FDEDD03007762A3 /* Build configuration list for PBXNativeTarget "TransformableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F615F58F1FDEDD03007762A3 /* Debug */,
+				F615F5901FDEDD03007762A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F6DCAC4C1FDCC54700234666 /* Build configuration list for PBXProject "TransformableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

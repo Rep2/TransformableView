@@ -10,7 +10,7 @@ public protocol DragableView {
 }
 
 extension DragableView where Self: UIView {
-    func addDragGestrueHandling() {
+    public func addDragGestrueHandling() {
         rx
             .panGesture()
             .subscribe(

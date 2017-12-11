@@ -8,5 +8,10 @@ target 'TransformableView' do
   target 'TransformableViewTests' do
     inherit! :search_paths
   end
+end
 
+target 'TransformableViewDemo' do
+  use_frameworks!
+
+  pod 'RxGesture', '~> 1.2'
 end
