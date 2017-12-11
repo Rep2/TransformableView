@@ -1,4 +1,6 @@
-public protocol TransformableView: DraggableView, ResizableView, RotatableView {}
+public protocol TransformableView: DraggableView, ResizableView, RotatableView {
+    func addGesturesHandling()
+}
 
 extension TransformableView {
     public func addGesturesHandling() {

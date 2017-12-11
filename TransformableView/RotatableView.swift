@@ -6,7 +6,7 @@ public protocol RotatableView {
      var disposeBag: DisposeBag { get }
 
     func addRotateGestrueHandling()
-    @objc optional func didUpdate(rotation: CGFloat)
+    func didUpdate(rotation: CGFloat)
 }
 
 extension RotatableView where Self: UIView {
