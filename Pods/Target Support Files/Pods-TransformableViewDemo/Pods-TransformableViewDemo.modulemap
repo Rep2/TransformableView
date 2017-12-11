@@ -1,6 +1,0 @@
-framework module Pods_TransformableViewDemo {
-  umbrella header "Pods-TransformableViewDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}
