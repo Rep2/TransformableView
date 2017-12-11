@@ -2,14 +2,14 @@ import UIKit
 import RxGesture
 import RxSwift
 
-public protocol RotateableView {
-    var disposeBag: DisposeBag { get }
+public protocol RotatableView {
+     var disposeBag: DisposeBag { get }
 
     func addRotateGestrueHandling()
-    func didUpdate(rotation: CGFloat)
+    @objc optional func didUpdate(rotation: CGFloat)
 }
 
-extension RotateableView where Self: UIView {
+extension RotatableView where Self: UIView {
     public func addRotateGestrueHandling() {
         rx
             .rotationGesture(

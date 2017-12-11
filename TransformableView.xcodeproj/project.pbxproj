@@ -18,7 +18,7 @@
 		F6DCAC5C1FDCC54700234666 /* TransformableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DCAC521FDCC54700234666 /* TransformableView.framework */; };
 		F6DCAC611FDCC54700234666 /* TransformableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCAC601FDCC54700234666 /* TransformableViewTests.swift */; };
 		F6DCAC631FDCC54700234666 /* TransformableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F6DCAC551FDCC54700234666 /* TransformableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6DCAC701FDCC5D300234666 /* RotateableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCAC6C1FDCC5D300234666 /* RotateableView.swift */; };
+		F6DCAC701FDCC5D300234666 /* RotatableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCAC6C1FDCC5D300234666 /* RotatableView.swift */; };
 		F6DCAC711FDCC5D300234666 /* DragableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCAC6D1FDCC5D300234666 /* DragableView.swift */; };
 		F6DCAC721FDCC5D300234666 /* TransformableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCAC6E1FDCC5D300234666 /* TransformableView.swift */; };
 		F6DCAC731FDCC5D300234666 /* ResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCAC6F1FDCC5D300234666 /* ResizableView.swift */; };
@@ -59,7 +59,7 @@
 		F6DCAC5B1FDCC54700234666 /* TransformableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DCAC601FDCC54700234666 /* TransformableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformableViewTests.swift; sourceTree = "<group>"; };
 		F6DCAC621FDCC54700234666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6DCAC6C1FDCC5D300234666 /* RotateableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateableView.swift; sourceTree = "<group>"; };
+		F6DCAC6C1FDCC5D300234666 /* RotatableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatableView.swift; sourceTree = "<group>"; };
 		F6DCAC6D1FDCC5D300234666 /* DragableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragableView.swift; sourceTree = "<group>"; };
 		F6DCAC6E1FDCC5D300234666 /* TransformableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformableView.swift; sourceTree = "<group>"; };
 		F6DCAC6F1FDCC5D300234666 /* ResizableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizableView.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			children = (
 				F6DCAC6D1FDCC5D300234666 /* DragableView.swift */,
 				F6DCAC6F1FDCC5D300234666 /* ResizableView.swift */,
-				F6DCAC6C1FDCC5D300234666 /* RotateableView.swift */,
+				F6DCAC6C1FDCC5D300234666 /* RotatableView.swift */,
 				F6DCAC6E1FDCC5D300234666 /* TransformableView.swift */,
 				F6DCAC551FDCC54700234666 /* TransformableView.h */,
 				F6DCAC561FDCC54700234666 /* Info.plist */,
@@ -486,7 +486,7 @@
 				F6DCAC721FDCC5D300234666 /* TransformableView.swift in Sources */,
 				F6DCAC711FDCC5D300234666 /* DragableView.swift in Sources */,
 				F6DCAC731FDCC5D300234666 /* ResizableView.swift in Sources */,
-				F6DCAC701FDCC5D300234666 /* RotateableView.swift in Sources */,
+				F6DCAC701FDCC5D300234666 /* RotatableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

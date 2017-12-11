@@ -2,14 +2,14 @@ import UIKit
 import RxGesture
 import RxSwift
 
-public protocol DragableView {
+public protocol DraggableView {
     var disposeBag: DisposeBag { get }
 
     func addDragGestrueHandling()
     func didUpdate(frame: CGRect)
 }
 
-extension DragableView where Self: UIView {
+extension DraggableView where Self: UIView {
     public func addDragGestrueHandling() {
         rx
             .panGesture()
