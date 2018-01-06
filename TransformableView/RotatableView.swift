@@ -33,7 +33,11 @@ extension RotatableView where Self: UIView {
 
                         rotationGestureRecognizer.rotation = 0
                     case .ended:
-                        strongSelf.didUpdate(rotation: rotationGestureRecognizer.rotation)
+
+                        strongSelf
+                            .didUpdate(
+                                rotation: atan2(strongSelf.transform.b, strongSelf.transform.a)
+                        )
                     default:
                         break
                     }
