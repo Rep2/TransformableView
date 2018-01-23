@@ -12,6 +12,8 @@ public protocol ResizableView {
 
 extension ResizableView where Self: UIView {
     public func addScaleGestrueHandling() {
+        layer.borderColor = UIColor.black.cgColor
+        
         rx
             .pinchGesture(
                 configuration: { _, delegate in
@@ -22,6 +24,8 @@ extension ResizableView where Self: UIView {
                     guard var strongSelf = self else { return }
 
                     switch pinchGestureRecognizer.state {
+                    case .began:
+                        strongSelf.layer.borderWidth = 10
                     case .changed:
                         let scale = pinchGestureRecognizer.scale / strongSelf.scale
 
@@ -32,6 +36,7 @@ extension ResizableView where Self: UIView {
                         strongSelf.scale = pinchGestureRecognizer.scale
                     case .ended:
                         strongSelf.scale = 1
+                        strongSelf.layer.borderWidth = 0
 
                         strongSelf.didUpdate(frame: strongSelf.frame)
                     default:

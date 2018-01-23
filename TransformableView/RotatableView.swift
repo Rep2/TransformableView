@@ -11,6 +11,8 @@ public protocol RotatableView {
 
 extension RotatableView where Self: UIView {
     public func addRotateGestrueHandling() {
+        layer.borderColor = UIColor.black.cgColor
+        
         rx
             .rotationGesture(
                 configuration: { _, delegate in
@@ -21,6 +23,8 @@ extension RotatableView where Self: UIView {
                     guard let strongSelf = self else { return }
 
                     switch rotationGestureRecognizer.state {
+                    case .began:
+                        strongSelf.layer.borderWidth = 10
                     case .changed:
                         let x = strongSelf.layer.bounds.minX
                         let y = strongSelf.layer.bounds.minY
@@ -33,10 +37,10 @@ extension RotatableView where Self: UIView {
 
                         rotationGestureRecognizer.rotation = 0
                     case .ended:
+                        strongSelf.layer.borderWidth = 0
 
-                        strongSelf
-                            .didUpdate(
-                                rotation: atan2(strongSelf.transform.b, strongSelf.transform.a)
+                        strongSelf.didUpdate(
+                            rotation: atan2(strongSelf.transform.b, strongSelf.transform.a)
                         )
                     default:
                         break
