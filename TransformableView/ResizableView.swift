@@ -5,14 +5,15 @@ import RxSwift
 public protocol ResizableView {
     var disposeBag: DisposeBag { get }
     var scale: CGFloat { get set }
+    var borderType: BorderType { get }
 
     func addScaleGestrueHandling()
     func didUpdate(frame: CGRect)
 }
 
 extension ResizableView where Self: UIView {
-    public func addScaleGestrueHandling(displayBorder: Bool = false, borderWidth: Float = 10, borderColor: UIColor = .black) {
-        layer.borderColor = borderColor.cgColor
+    public func addScaleGestrueHandling() {
+        layer.borderColor = borderType.borderColor?.cgColor
         
         rx
             .pinchGesture(
@@ -25,7 +26,7 @@ extension ResizableView where Self: UIView {
 
                     switch pinchGestureRecognizer.state {
                     case .began:
-                        strongSelf.layer.borderWidth = displayBorder ? borderWidth : 0
+                        strongSelf.layer.borderWidth = strongSelf.borderType.borderWidth
                     case .changed:
                         let scale = pinchGestureRecognizer.scale / strongSelf.scale
 

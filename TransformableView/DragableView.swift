@@ -4,14 +4,15 @@ import RxSwift
 
 public protocol DraggableView {
     var disposeBag: DisposeBag { get }
+    var borderType: BorderType { get }
 
     func addDragGestrueHandling()
     func didUpdate(frame: CGRect)
 }
 
 extension DraggableView where Self: UIView {
-    public func addDragGestrueHandling(displayBorder: Bool = false, borderWidth: Float = 10, borderColor: UIColor = .black) {
-        layer.borderColor = borderColor.cgColor
+    public func addDragGestrueHandling() {
+        layer.borderColor = borderType.borderColor?.cgColor
 
         rx
             .panGesture()
@@ -21,7 +22,7 @@ extension DraggableView where Self: UIView {
 
                     switch panGestureRecognizer.state {
                     case .began:
-                        strongSelf.layer.borderWidth = displayBorder ? borderWidth : 0
+                        strongSelf.layer.borderWidth = strongSelf.borderType.borderWidth
                     case .changed:
                         let translation = panGestureRecognizer.translation(in: strongSelf.superview)
 
