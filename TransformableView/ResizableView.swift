@@ -11,6 +11,8 @@ public protocol ResizableView {
     var maxScale: CGFloat? { get }
 
     func addScaleGestrueHandling()
+
+    func updateDidBegin()
     func didUpdate(frame: CGRect)
 }
 
@@ -30,6 +32,8 @@ extension ResizableView where Self: UIView {
                     switch pinchGestureRecognizer.state {
                     case .began:
                         strongSelf.layer.borderWidth = strongSelf.borderType.borderWidth
+
+                        strongSelf.updateDidBegin()
                     case .changed:
                         var scale = pinchGestureRecognizer.scale / strongSelf.scale
 

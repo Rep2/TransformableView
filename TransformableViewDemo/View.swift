@@ -33,4 +33,7 @@ class View: UIView, TransformableView {
 
     func didUpdate(rotation: CGFloat) {
     }
+
+    func updateDidBegin() {
+    }
 }
