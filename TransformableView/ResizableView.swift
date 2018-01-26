@@ -21,11 +21,8 @@ extension ResizableView where Self: UIView {
         layer.borderColor = borderType.borderColor?.cgColor
 
         rx
-            .pinchGesture(
-                configuration: { _, delegate in
-                    delegate.simultaneousRecognitionPolicy = .never
-            }
-            ).subscribe(
+            .pinchGesture()
+            .subscribe(
                 onNext: { [weak self] pinchGestureRecognizer in
                     guard var strongSelf = self else { return }
 

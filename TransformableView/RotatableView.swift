@@ -15,11 +15,8 @@ extension RotatableView where Self: UIView {
         layer.borderColor = borderType.borderColor?.cgColor
 
         rx
-            .rotationGesture(
-                configuration: { _, delegate in
-                    delegate.simultaneousRecognitionPolicy = .never
-                }
-            ).subscribe(
+            .rotationGesture()
+            .subscribe(
                 onNext: { [weak self] rotationGestureRecognizer in
                     guard let strongSelf = self else { return }
 
