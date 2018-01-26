@@ -10,8 +10,8 @@ public protocol DraggableView {
 }
 
 extension DraggableView where Self: UIView {
-    public func addDragGestrueHandling() {
-        layer.borderColor = UIColor.black.cgColor
+    public func addDragGestrueHandling(displayBorder: Bool = false, borderWidth: Float = 10, borderColor: UIColor = .black) {
+        layer.borderColor = borderColor.cgColor
 
         rx
             .panGesture()
@@ -21,7 +21,7 @@ extension DraggableView where Self: UIView {
 
                     switch panGestureRecognizer.state {
                     case .began:
-                        strongSelf.layer.borderWidth = 10
+                        strongSelf.layer.borderWidth = displayBorder ? borderWidth : 0
                     case .changed:
                         let translation = panGestureRecognizer.translation(in: strongSelf.superview)
 

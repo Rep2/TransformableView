@@ -3,16 +3,17 @@ import RxGesture
 import RxSwift
 
 public protocol RotatableView {
-     var disposeBag: DisposeBag { get }
+    var disposeBag: DisposeBag { get }
+    var
 
     func addRotateGestrueHandling()
     func didUpdate(rotation: CGFloat)
 }
 
 extension RotatableView where Self: UIView {
-    public func addRotateGestrueHandling() {
-        layer.borderColor = UIColor.black.cgColor
-        
+    public func addRotateGestrueHandling(displayBorder: Bool = false, borderWidth: Float = 10, borderColor: UIColor = .black) {
+        layer.borderColor = borderColor.cgColor
+
         rx
             .rotationGesture(
                 configuration: { _, delegate in
@@ -24,7 +25,7 @@ extension RotatableView where Self: UIView {
 
                     switch rotationGestureRecognizer.state {
                     case .began:
-                        strongSelf.layer.borderWidth = 10
+                        strongSelf.layer.borderWidth = displayBorder ? borderWidth : 0
                     case .changed:
                         let x = strongSelf.layer.bounds.minX
                         let y = strongSelf.layer.bounds.minY
