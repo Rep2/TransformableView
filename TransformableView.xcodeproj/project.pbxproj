@@ -14,6 +14,7 @@
 		F615F58D1FDEDD03007762A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F615F58B1FDEDD03007762A3 /* LaunchScreen.storyboard */; };
 		F615F5931FDEDFE9007762A3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615F5921FDEDFE9007762A3 /* View.swift */; };
 		F617AA57201AAC7600985E34 /* BorderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617AA56201AAC7600985E34 /* BorderType.swift */; };
+		F617AA59201AB81F00985E34 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617AA58201AB81F00985E34 /* UIView.swift */; };
 		F69B4E911FDEFD1100210797 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E901FDEFD1100210797 /* RxSwift.framework */; };
 		F69B4E931FDEFD1300210797 /* RxGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E921FDEFD1300210797 /* RxGesture.framework */; };
 		F69B4E951FDEFD2000210797 /* RxGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E941FDEFD2000210797 /* RxGesture.framework */; };
@@ -68,6 +69,7 @@
 		F615F58E1FDEDD03007762A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F615F5921FDEDFE9007762A3 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		F617AA56201AAC7600985E34 /* BorderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderType.swift; sourceTree = "<group>"; };
+		F617AA58201AB81F00985E34 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F69B4E901FDEFD1100210797 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		F69B4E921FDEFD1300210797 /* RxGesture.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxGesture.framework; path = Carthage/Build/iOS/RxGesture.framework; sourceTree = "<group>"; };
 		F69B4E941FDEFD2000210797 /* RxGesture.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxGesture.framework; path = Carthage/Build/iOS/RxGesture.framework; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				F6DCAC551FDCC54700234666 /* TransformableView.h */,
 				F6DCAC561FDCC54700234666 /* Info.plist */,
 				F617AA56201AAC7600985E34 /* BorderType.swift */,
+				F617AA58201AB81F00985E34 /* UIView.swift */,
 			);
 			path = TransformableView;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				F617AA57201AAC7600985E34 /* BorderType.swift in Sources */,
 				F6DCAC711FDCC5D300234666 /* DragableView.swift in Sources */,
 				F6DCAC731FDCC5D300234666 /* ResizableView.swift in Sources */,
+				F617AA59201AB81F00985E34 /* UIView.swift in Sources */,
 				F6DCAC701FDCC5D300234666 /* RotatableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

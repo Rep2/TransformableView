@@ -7,6 +7,9 @@ public protocol ResizableView {
     var scale: CGFloat { get set }
     var borderType: BorderType { get }
 
+    var minScale: CGFloat? { get }
+    var maxScale: CGFloat? { get }
+
     func addScaleGestrueHandling()
     func didUpdate(frame: CGRect)
 }
@@ -14,7 +17,7 @@ public protocol ResizableView {
 extension ResizableView where Self: UIView {
     public func addScaleGestrueHandling() {
         layer.borderColor = borderType.borderColor?.cgColor
-        
+
         rx
             .pinchGesture(
                 configuration: { _, delegate in
@@ -28,7 +31,15 @@ extension ResizableView where Self: UIView {
                     case .began:
                         strongSelf.layer.borderWidth = strongSelf.borderType.borderWidth
                     case .changed:
-                        let scale = pinchGestureRecognizer.scale / strongSelf.scale
+                        var scale = pinchGestureRecognizer.scale / strongSelf.scale
+
+                        let newScale = scale * strongSelf.verticalScale
+
+                        if let minScale = strongSelf.minScale, newScale < minScale {
+                            scale = minScale / strongSelf.verticalScale
+                        } else if let maxScale = strongSelf.maxScale, newScale > maxScale {
+                            scale = maxScale / strongSelf.verticalScale
+                        }
 
                         strongSelf.transform = strongSelf
                             .transform

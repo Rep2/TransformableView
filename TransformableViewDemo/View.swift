@@ -3,6 +3,14 @@ import TransformableView
 import RxSwift
 
 class View: UIView, TransformableView {
+    var minX: CGFloat? = 10
+    var maxX: CGFloat? = 200
+    var minY: CGFloat? = 10
+    var maxY: CGFloat? = 400
+
+    var minScale: CGFloat? = 0.5
+    var maxScale: CGFloat?
+
     let disposeBag = DisposeBag()
 
     var scale: CGFloat = 1
