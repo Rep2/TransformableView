@@ -15,15 +15,12 @@
 		F615F5931FDEDFE9007762A3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F615F5921FDEDFE9007762A3 /* View.swift */; };
 		F617AA57201AAC7600985E34 /* BorderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617AA56201AAC7600985E34 /* BorderType.swift */; };
 		F617AA59201AB81F00985E34 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617AA58201AB81F00985E34 /* UIView.swift */; };
+		F682F2F2203DB106001DDD7C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E9B1FDEFD4B00210797 /* RxCocoa.framework */; };
+		F682F2F3203DB106001DDD7C /* RxGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E921FDEFD1300210797 /* RxGesture.framework */; };
+		F682F2F4203DB106001DDD7C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E901FDEFD1100210797 /* RxSwift.framework */; };
 		F69B4E911FDEFD1100210797 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E901FDEFD1100210797 /* RxSwift.framework */; };
 		F69B4E931FDEFD1300210797 /* RxGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E921FDEFD1300210797 /* RxGesture.framework */; };
-		F69B4E951FDEFD2000210797 /* RxGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E941FDEFD2000210797 /* RxGesture.framework */; };
-		F69B4E961FDEFD2000210797 /* RxGesture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E941FDEFD2000210797 /* RxGesture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F69B4E991FDEFD2600210797 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E981FDEFD2600210797 /* RxSwift.framework */; };
-		F69B4E9A1FDEFD2600210797 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E981FDEFD2600210797 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F69B4E9C1FDEFD4B00210797 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E9B1FDEFD4B00210797 /* RxCocoa.framework */; };
-		F69B4E9E1FDEFD6500210797 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E9D1FDEFD6500210797 /* RxCocoa.framework */; };
-		F69B4E9F1FDEFD6500210797 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F69B4E9D1FDEFD6500210797 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6DCAC5C1FDCC54700234666 /* TransformableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DCAC521FDCC54700234666 /* TransformableView.framework */; };
 		F6DCAC611FDCC54700234666 /* TransformableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DCAC601FDCC54700234666 /* TransformableViewTests.swift */; };
 		F6DCAC631FDCC54700234666 /* TransformableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F6DCAC551FDCC54700234666 /* TransformableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,22 +39,6 @@
 			remoteInfo = TransformableView;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F69B4E971FDEFD2000210797 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F69B4E9F1FDEFD6500210797 /* RxCocoa.framework in Embed Frameworks */,
-				F69B4E9A1FDEFD2600210797 /* RxSwift.framework in Embed Frameworks */,
-				F69B4E961FDEFD2000210797 /* RxGesture.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F615F5801FDEDD03007762A3 /* TransformableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransformableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,9 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F69B4E9E1FDEFD6500210797 /* RxCocoa.framework in Frameworks */,
-				F69B4E991FDEFD2600210797 /* RxSwift.framework in Frameworks */,
-				F69B4E951FDEFD2000210797 /* RxGesture.framework in Frameworks */,
+				F682F2F2203DB106001DDD7C /* RxCocoa.framework in Frameworks */,
+				F682F2F3203DB106001DDD7C /* RxGesture.framework in Frameworks */,
+				F682F2F4203DB106001DDD7C /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +194,7 @@
 				F615F57C1FDEDD03007762A3 /* Sources */,
 				F615F57D1FDEDD03007762A3 /* Frameworks */,
 				F615F57E1FDEDD03007762A3 /* Resources */,
-				F69B4E971FDEFD2000210797 /* Embed Frameworks */,
+				F682F2F5203DB10B001DDD7C /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -331,6 +312,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F682F2F5203DB10B001DDD7C /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxGesture.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F615F57C1FDEDD03007762A3 /* Sources */ = {
