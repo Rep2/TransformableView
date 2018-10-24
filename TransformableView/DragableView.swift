@@ -12,6 +12,8 @@ public protocol DraggableView {
     var maxY: CGFloat? { get }
 
     func addDragGestrueHandling()
+
+    func willStartDragging()
     func didUpdate(frame: CGRect)
 }
 
@@ -27,6 +29,8 @@ extension DraggableView where Self: UIView {
 
                     switch panGestureRecognizer.state {
                     case .began:
+                        strongSelf.willStartDragging()
+
                         strongSelf.layer.borderWidth = strongSelf.borderType.borderWidth
                     case .changed:
                         var translation = panGestureRecognizer.translation(in: strongSelf.superview)
@@ -57,4 +61,7 @@ extension DraggableView where Self: UIView {
                 }
         ).disposed(by: disposeBag)
     }
+
+    func willStartDragging() {}
+    func didUpdate(frame: CGRect) {}
 }
