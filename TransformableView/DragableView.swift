@@ -54,7 +54,7 @@ extension DraggableView where Self: UIView {
                     default:
                         break
                     }
-            }
+                }
         ).disposed(by: disposeBag)
     }
 }

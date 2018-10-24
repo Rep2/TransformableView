@@ -55,7 +55,7 @@ extension ResizableView where Self: UIView {
                     default:
                         break
                     }
-            }
+                }
         ).disposed(by: disposeBag)
     }
 }
